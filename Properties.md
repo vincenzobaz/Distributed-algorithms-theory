@@ -117,4 +117,8 @@
  - RB **No duplication** no message is delivered more than once
  - RB **Agreement** for any message m, correct p delivers m => every correct process delivers m
 
-
+# Non blocking atomic commit
+ - **Agreement** no two processes decide differently
+ - **Termination** every correct process eventually decides
+ - **Commit-Validity** 1 can be decided <=> every correct process proposes 1
+ - **Abort-Validity** 0 can only be decided if some process crashes or proposes 0
